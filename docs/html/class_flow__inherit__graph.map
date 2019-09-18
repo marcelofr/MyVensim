@@ -1,0 +1,5 @@
+<map id="Flow" name="Flow">
+<area shape="rect" id="node1" title="Class to define a flow in the model." alt="" coords="45,5,172,288"/>
+<area shape="rect" id="node2" href="$class_exp_flow.html" title=" " alt="" coords="5,336,97,428"/>
+<area shape="rect" id="node3" href="$class_log_flow.html" title=" " alt="" coords="122,336,213,428"/>
+</map>

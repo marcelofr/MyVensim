@@ -1,0 +1,244 @@
+\hypertarget{class_model}{}\doxysection{Model Class Reference}
+\label{class_model}\index{Model@{Model}}
+
+
+Class to define the model.  
+
+
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+
+
+Collaboration diagram for Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_a3502cb0484db17cd9a4281dab8c1e794}{Model}} (int i=0, int f=0, int s=0)
+\item 
+virtual \mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model}} ()
+\item 
+\mbox{\hyperlink{class_model}{Model}} \& \mbox{\hyperlink{class_model_aad5eadb989dae838966ef6d27769aea1}{operator=}} (const \mbox{\hyperlink{class_model}{Model}} \&)
+\item 
+\mbox{\hyperlink{class_model_aa34aecee0dfdc5101011b7c9c74fe7d6}{Model}} (\mbox{\hyperlink{class_model}{Model}} \&)
+\item 
+void \mbox{\hyperlink{class_model_afe5a20860d7658c83f998070501e5ca2}{Execute}} ()
+\item 
+void \mbox{\hyperlink{class_model_a9c1149bf0e9e7a426a846f0d7f3fd729}{Add}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$f)
+\item 
+void \mbox{\hyperlink{class_model_a0d805109da61994390e8730a2942c547}{Add}} (\mbox{\hyperlink{class_system}{System}} $\ast$s)
+\item 
+void \mbox{\hyperlink{class_model_abdb87db7c45332c504ddaee74547ebda}{Report}} ()
+\item 
+int \mbox{\hyperlink{class_model_a2fee1cbf16bd5ca966a90c537eecf9ef}{get\+Initial}} () const
+\item 
+void \mbox{\hyperlink{class_model_aaaa5bf76983c3646cdfe7c5023685eb5}{set\+Initial}} (int value)
+\item 
+int \mbox{\hyperlink{class_model_ab49f0d4c0ca8aa17d34fa3662d1040ce}{get\+Final}} () const
+\item 
+void \mbox{\hyperlink{class_model_a0b5c7e8c98fe6fe2905344d24b0af8bc}{set\+Final}} (int value)
+\item 
+int \mbox{\hyperlink{class_model_afeff4a7d3590d1758a67f932dce87da0}{get\+Step}} () const
+\item 
+void \mbox{\hyperlink{class_model_aa4af7adce185fb109b93c1677e160a14}{set\+Step}} (int value)
+\item 
+int \mbox{\hyperlink{class_model_a94ce3517074899c86b4e722575fa1882}{Size\+My\+Systems}} ()
+\item 
+int \mbox{\hyperlink{class_model_ad7a0cb517046f8b5c74cf22598bde9d0}{Size\+My\+Flows}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$ \mbox{\hyperlink{class_model_ac54dc94e815bcd4016deb3b4df35bcda}{My\+Flows}}
+\item 
+vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$ \mbox{\hyperlink{class_model_aac49aff4d9dd3a91eb101b90a2dd14b1}{My\+Systems}}
+\item 
+int \mbox{\hyperlink{class_model_a1ca5fef9d661e90322b148a99c77cab0}{initial}}
+\item 
+int \mbox{\hyperlink{class_model_ac934a6bbee44edc41ab520b8ebea8dc6}{final}}
+\item 
+int \mbox{\hyperlink{class_model_a5088cd520f0159190f7abd61d6e3274b}{step}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to define the model. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_model_a3502cb0484db17cd9a4281dab8c1e794}\label{class_model_a3502cb0484db17cd9a4281dab8c1e794}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}\item[{int}]{i = {\ttfamily 0},  }\item[{int}]{f = {\ttfamily 0},  }\item[{int}]{s = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_model}{Model}} class Constructor \mbox{\Hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}\label{class_model_ad6ebd2062a0b823db841a0b88baac4c0}} 
+\index{Model@{Model}!````~Model@{$\sim$Model}}
+\index{````~Model@{$\sim$Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{$\sim$Model()}{~Model()}}
+{\footnotesize\ttfamily Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\hyperlink{class_model}{Model}} class destructor \mbox{\Hypertarget{class_model_aa34aecee0dfdc5101011b7c9c74fe7d6}\label{class_model_aa34aecee0dfdc5101011b7c9c74fe7d6}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_model}{Model}} \&}]{m }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_model}{Model}} class copy operator 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_a9c1149bf0e9e7a426a846f0d7f3fd729}\label{class_model_a9c1149bf0e9e7a426a846f0d7f3fd729}} 
+\index{Model@{Model}!Add@{Add}}
+\index{Add@{Add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Model\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+Method to add a flow to the model Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{class_model_a9c1149bf0e9e7a426a846f0d7f3fd729_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_model_a0d805109da61994390e8730a2942c547}\label{class_model_a0d805109da61994390e8730a2942c547}} 
+\index{Model@{Model}!Add@{Add}}
+\index{Add@{Add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Model\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+Method to add a system to the model \mbox{\Hypertarget{class_model_afe5a20860d7658c83f998070501e5ca2}\label{class_model_afe5a20860d7658c83f998070501e5ca2}} 
+\index{Model@{Model}!Execute@{Execute}}
+\index{Execute@{Execute}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Model\+::\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method define the model execution Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{class_model_afe5a20860d7658c83f998070501e5ca2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_model_ab49f0d4c0ca8aa17d34fa3662d1040ce}\label{class_model_ab49f0d4c0ca8aa17d34fa3662d1040ce}} 
+\index{Model@{Model}!getFinal@{getFinal}}
+\index{getFinal@{getFinal}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getFinal()}{getFinal()}}
+{\footnotesize\ttfamily int Model\+::get\+Final (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Method to get model final value \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_model}{Model}} final value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a2fee1cbf16bd5ca966a90c537eecf9ef}\label{class_model_a2fee1cbf16bd5ca966a90c537eecf9ef}} 
+\index{Model@{Model}!getInitial@{getInitial}}
+\index{getInitial@{getInitial}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getInitial()}{getInitial()}}
+{\footnotesize\ttfamily int Model\+::get\+Initial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Method to get model initial value \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_model}{Model}} initial value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_afeff4a7d3590d1758a67f932dce87da0}\label{class_model_afeff4a7d3590d1758a67f932dce87da0}} 
+\index{Model@{Model}!getStep@{getStep}}
+\index{getStep@{getStep}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getStep()}{getStep()}}
+{\footnotesize\ttfamily int Model\+::get\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Method to get model step value \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_model}{Model}} step value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_aad5eadb989dae838966ef6d27769aea1}\label{class_model_aad5eadb989dae838966ef6d27769aea1}} 
+\index{Model@{Model}!operator=@{operator=}}
+\index{operator=@{operator=}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model}{Model}} \& Model\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_model}{Model}} \&}]{m }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_model}{Model}} class Attribution operator \begin{DoxyReturn}{Returns}
+Pointer for object class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_abdb87db7c45332c504ddaee74547ebda}\label{class_model_abdb87db7c45332c504ddaee74547ebda}} 
+\index{Model@{Model}!Report@{Report}}
+\index{Report@{Report}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Report()}{Report()}}
+{\footnotesize\ttfamily void Model\+::\+Report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to print model data \mbox{\Hypertarget{class_model_a0b5c7e8c98fe6fe2905344d24b0af8bc}\label{class_model_a0b5c7e8c98fe6fe2905344d24b0af8bc}} 
+\index{Model@{Model}!setFinal@{setFinal}}
+\index{setFinal@{setFinal}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setFinal()}{setFinal()}}
+{\footnotesize\ttfamily void Model\+::set\+Final (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_model_aaaa5bf76983c3646cdfe7c5023685eb5}\label{class_model_aaaa5bf76983c3646cdfe7c5023685eb5}} 
+\index{Model@{Model}!setInitial@{setInitial}}
+\index{setInitial@{setInitial}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setInitial()}{setInitial()}}
+{\footnotesize\ttfamily void Model\+::set\+Initial (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_model_aa4af7adce185fb109b93c1677e160a14}\label{class_model_aa4af7adce185fb109b93c1677e160a14}} 
+\index{Model@{Model}!setStep@{setStep}}
+\index{setStep@{setStep}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setStep()}{setStep()}}
+{\footnotesize\ttfamily void Model\+::set\+Step (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_model_ad7a0cb517046f8b5c74cf22598bde9d0}\label{class_model_ad7a0cb517046f8b5c74cf22598bde9d0}} 
+\index{Model@{Model}!SizeMyFlows@{SizeMyFlows}}
+\index{SizeMyFlows@{SizeMyFlows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{SizeMyFlows()}{SizeMyFlows()}}
+{\footnotesize\ttfamily int Model\+::\+Size\+My\+Flows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get the number of flows in the model \begin{DoxyReturn}{Returns}
+Number of flows in the model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a94ce3517074899c86b4e722575fa1882}\label{class_model_a94ce3517074899c86b4e722575fa1882}} 
+\index{Model@{Model}!SizeMySystems@{SizeMySystems}}
+\index{SizeMySystems@{SizeMySystems}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{SizeMySystems()}{SizeMySystems()}}
+{\footnotesize\ttfamily int Model\+::\+Size\+My\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get the number of systems in the model \begin{DoxyReturn}{Returns}
+Number of systems in the model 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_model_ac934a6bbee44edc41ab520b8ebea8dc6}\label{class_model_ac934a6bbee44edc41ab520b8ebea8dc6}} 
+\index{Model@{Model}!final@{final}}
+\index{final@{final}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{final}{final}}
+{\footnotesize\ttfamily int Model\+::final\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{class_model}{Model}} final time \mbox{\Hypertarget{class_model_a1ca5fef9d661e90322b148a99c77cab0}\label{class_model_a1ca5fef9d661e90322b148a99c77cab0}} 
+\index{Model@{Model}!initial@{initial}}
+\index{initial@{initial}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{initial}{initial}}
+{\footnotesize\ttfamily int Model\+::initial\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{class_model}{Model}} initial time \mbox{\Hypertarget{class_model_ac54dc94e815bcd4016deb3b4df35bcda}\label{class_model_ac54dc94e815bcd4016deb3b4df35bcda}} 
+\index{Model@{Model}!MyFlows@{MyFlows}}
+\index{MyFlows@{MyFlows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{MyFlows}{MyFlows}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_flow}{Flow}}$\ast$$>$ Model\+::\+My\+Flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pointers to the model flow set \mbox{\hyperlink{class_flow}{Flow}} \mbox{\Hypertarget{class_model_aac49aff4d9dd3a91eb101b90a2dd14b1}\label{class_model_aac49aff4d9dd3a91eb101b90a2dd14b1}} 
+\index{Model@{Model}!MySystems@{MySystems}}
+\index{MySystems@{MySystems}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{MySystems}{MySystems}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_system}{System}}$\ast$$>$ Model\+::\+My\+Systems\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pointers to the model system set \mbox{\Hypertarget{class_model_a5088cd520f0159190f7abd61d6e3274b}\label{class_model_a5088cd520f0159190f7abd61d6e3274b}} 
+\index{Model@{Model}!step@{step}}
+\index{step@{step}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily int Model\+::step\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{class_model}{Model}} step value 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Doutorado/\+Disciplinas/\+Engenharia de Software/\+A\+P\+I Simulador/\+Sprint 3/\+My\+Vensim/src/\mbox{\hyperlink{model_8h}{model.\+h}}\item 
+D\+:/\+Doutorado/\+Disciplinas/\+Engenharia de Software/\+A\+P\+I Simulador/\+Sprint 3/\+My\+Vensim/src/\mbox{\hyperlink{model_8cpp}{model.\+cpp}}\end{DoxyCompactItemize}
